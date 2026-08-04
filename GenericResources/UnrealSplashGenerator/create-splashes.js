@@ -286,6 +286,6 @@ async function main() {
 }
 
 main().catch((error) => {
-  console.error(`\nError: ${error.message}`);
-  process.exitCode = 1;
+    console.error(`\nError: ${error.message}`);
+    process.exitCode = 1;
 });
