@@ -1,0 +1,13 @@
+{
+  "name": "unreal-splash-generator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Batch-create Unreal Engine BMP splash screens and logo-branded preview images.",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node create-splashes.js"
+  },
+  "dependencies": {
+    "sharp": "^0.34.3"
+  }
+}

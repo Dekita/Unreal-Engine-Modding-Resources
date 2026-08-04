@@ -1,46 +1,15 @@
-# G1R-Resources
-Some basic resources for modding Gothic 1 Remake
+# Unreal Engine Modding Resources
+This repository contains some basic resources helpful for modding Unreal Engine games.
 
+Within the repo's additional sub-folders, there are specific resources for specific games. Things like specific blueprint or LUA example mods, game specific splash screens for using within the Unreal Engine editor, and potentially a usmap or umap file for using within FModel to access the games assets.  
 
-## Blueprint Example Mod Files
-Within the blueprint example mod files folder, there are both a `Packaged`, and `Source` folders for both the `Alpakit` and `UE4SS` version of the example. 
-
-**The Packaged Files:**
-- Alpakit Version: Place the `Mods` folder into your games root `G1R` folder.
-- UE4SS Version: Place the `Content` folder into your games root `G1R` folder.
-
-**The Source Files:**
-- Alpakit Version: Place the `Mods` folder into your Unreal Engine project's root folder.
-- UE4SS Version: Place the `Content` folder into your Unreal Engine project's root folder.
-
-**How To Test:**
-- Alpakit Version: Press `Shift+A` while in the game world.
-  - Requires the G1R [BP Modloader & Console Enabler](https://www.nexusmods.com/gothic1remake/mods/1) mod to be installed. 
-- UE4SS Version: Press `Shift+U` while in the game world.
-  - Requires the latest experimental [UE4SS](https://github.com/UE4SS-RE/RE-UE4SS) release to be installed. 
-
-> [!NOTE]
-> Your Unreal Engine project's root folder would also be named `G1R` when using the [unofficial modkit](https://github.com/Kein/G1R). 
-
-## Example Lua Mod
-The Hello World Lua mod example, was created specifically for when using UE4SS. 
-
-The Entire `ExampleLuaMod` folder should be placed into your games directory at the following path;
-
-```
-Gothic 1 Remake\G1R\Binaries\Win64\ue4ss\Mods
-```
-
-Once installed, you will be able to press the `H` key to see `Key pressed: H - Hello World!` printed to the ue4ss log. 
-
-> [!NOTE]
-> The Example Lua mod assumes you have already installed UE4SS correctly before adding the example mod. 
+Within the [GenericResources](./GenericResources/) folder, you will find resources that are helpful in general, such as basic LUA mods, and splash screen images. 
 
 ## Custom Editor Splash Screens
-Within the `Gothic1EditorSplashScreens` folder, there is a number of bitmap files (`.bmp`). 
+Within any of the `EditorSplashScreens` folder, there is a number of bitmap files (`.bmp`). 
 
 To use any of them within your own Unreal Engine project follow these simple steps;
-- Open your G1R Unreal Engine project folder
+- Open your Unreal Engine project folder
 - Open your `Project Settings` menu
 - Search for `Splash`
 - Under `Platforms - Windows`, and `Editor Splash`, click the three little dots to select the desired splash image.
@@ -48,5 +17,5 @@ To use any of them within your own Unreal Engine project follow these simple ste
 
 When you next load the editor, it will use your selected splash image. 
 
-## Whats The ".usmap" File?
-This file is for use within programs like `FModel`, and is required to get full data on specific assets. Within FModel, you can easily select the custom mappings file to use from your local files. After selecting a valid mappings file, FModel will then be able to properly view and export assets. 
+## What Are ".usmap" Files?
+These files are for use within programs like `FModel`, and are required to get full data on specific assets. Within FModel, you can easily select the custom mappings file to use from your local files. After selecting a valid mappings file, FModel will then be able to properly view and export assets. 
